@@ -113,7 +113,7 @@ The project is a part of final year college project. Due to the current situatio
 >
 > 3. if vsync problem occurs, see this [link][flutter-vsync-issue] & restart the IDE
 > 4. goto file api_constants.dart (ctrl-p and filename may help to find it easily in VScode)
-> 5. fill the api key & server url values, you can get ip address of server (if local) by running `ifconfig` in linux, make sure both server & client is on same network, infermedica api key can be found by singing in to inferemedica website, it has limited free usage as of the year 2020.
+> 5. fill the api key & server url values, you can get ip address of server (if local) by running `ifconfig` in linux, make sure both server & client is on same network, infermedica api key can be found by signing in to inferemedica website, it has limited free usage as of the year 2020.
 > 6. connect the android & run the command `flutter run` or `flutter run --release`
 
 ## Resources
