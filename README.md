@@ -42,7 +42,7 @@ The project is a part of final year college project. Due to the current situatio
 
 ### Tools Used
 
-- NodeJS (for server side)
+- [NodeJS][node-js-link] (for server side)
 - Flutter (for client side)
 - MongoDB database
 - [Infermedica API](https://developer.infermedica.com/) (for symptom checking)
@@ -127,7 +127,7 @@ The project is a part of final year college project. Due to the current situatio
    - [Bloc + Cubit documentation](https://bloclibrary.dev/#/)
    - [Reso coder's youtube channel](https://www.youtube.com/channel/UCSIvrn68cUk8CS8MbtBmBkA)
    - [FilledStack youtube channel](https://www.filledstacks.com/)
-   - any many more
+   - and many more
 
    ##### some minor details
 
@@ -151,4 +151,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [flutter-downgrade-link]: https://stackoverflow.com/questions/49468321/how-to-downgrade-flutter-sdk-dart-1-x/64986246#64986246
 [flutter-vsync-issue]: https://stackoverflow.com/questions/63207206/animationcontroller-the-named-parameter-vsync-isnt-defined/63460418#63460418
-[node-js-link]: https://to_be_updated
+[node-js-link]: https://github.com/San0330/Health-Care-API
