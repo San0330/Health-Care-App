@@ -2,7 +2,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_google_maps/flutter_google_maps.dart';
+// import 'package:flutter_google_maps/flutter_google_maps.dart';
 import 'package:injectable/injectable.dart';
 import 'package:logger/logger.dart';
 
@@ -45,7 +45,7 @@ class MyBlocObserver extends BlocObserver {
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  GoogleMap.init(ApiConstants.googleMapsApi);
+  // GoogleMap.init(ApiConstants.googleMapsApi);
   await configureInjection(Environment.prod);
   Bloc.observer = MyBlocObserver();
 

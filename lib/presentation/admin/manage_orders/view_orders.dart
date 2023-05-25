@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_google_maps/flutter_google_maps.dart';
+// import 'package:flutter_google_maps/flutter_google_maps.dart';
 import 'package:intl/intl.dart';
 
 import '../../../application/orders_cubit/orders_cubit.dart';
@@ -165,22 +165,23 @@ class OrderTile extends StatelessWidget {
             SizedBox(
               height: 380,
               width: 380,
-              child: GoogleMap(
-                minZoom: 12,
-                initialPosition: GeoCoord(
-                  order.user.location.coordinates[1],
-                  order.user.location.coordinates[0],
-                ),
-                markers: {
-                  Marker(
-                    GeoCoord(
-                      order.user.location.coordinates[1],
-                      order.user.location.coordinates[0],
-                    ),
-                    label: 'initial Position',
-                  ),
-                },
-              ),
+              child: Container()
+              // GoogleMap(
+              //   minZoom: 12,
+              //   initialPosition: GeoCoord(
+              //     order.user.location.coordinates[1],
+              //     order.user.location.coordinates[0],
+              //   ),
+              //   markers: {
+              //     Marker(
+              //       GeoCoord(
+              //         order.user.location.coordinates[1],
+              //         order.user.location.coordinates[0],
+              //       ),
+              //       label: 'initial Position',
+              //     ),
+              //   },
+              // ),
             ),
           ]),
         );
@@ -246,7 +247,7 @@ class OrderTile extends StatelessWidget {
               ),
               RaisedButton(
                 onPressed: () {
-                  showMap(context);
+                  // showMap(context);
                 },
                 color: Colors.green,
                 child: const Text(

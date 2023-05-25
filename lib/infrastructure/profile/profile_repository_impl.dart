@@ -14,14 +14,14 @@ class ProfileRepository implements IProfileRepository {
   final IProfileRemoteDatasource remoteDatasource;
   final IAuthLocalDataSource localDataSource;
   final IMediaService mediaService;
-  final ILocationService locationService;
+  // final ILocationService locationService;
   final INetworkInfo networkInfo;
 
   ProfileRepository(
     this.remoteDatasource,
     this.localDataSource,
     this.mediaService,
-    this.locationService,
+    // this.locationService,
     this.networkInfo,
   );
 
@@ -52,17 +52,19 @@ class ProfileRepository implements IProfileRepository {
       return left(Failure(message: Failure.NO_INTERNET_CONNECTION));
     }
 
-    final longlat = await locationService.getLocation();
-    try {
-      final user =
-          await remoteDatasource.updateLocation(longlat[0], longlat[1]);
+    return left(const Failure(message: "Location service disabled"));
 
-      await localDataSource.cacheSignedInUser(user);
+    // final longlat = await locationService.getLocation();
+    // try {
+    //   final user =
+    //       await remoteDatasource.updateLocation(longlat[0], longlat[1]);
 
-      return right(unit);
-    } catch (e) {
-      return left(Failure(message: Failure.SERVER_FAILURE_MSG));
-    }
+    //   await localDataSource.cacheSignedInUser(user);
+
+    //   return right(unit);
+    // } catch (e) {
+    //   return left(Failure(message: Failure.SERVER_FAILURE_MSG));
+    // }
   }
 
   @override
